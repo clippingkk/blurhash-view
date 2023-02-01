@@ -1,15 +1,27 @@
 {
   "allPreferredVersions": {
     "blurhash": "~2.0.4",
+    "react": "~18.2.0",
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/builder-webpack5": "~6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "~18.0.27",
+    "babel-loader": "^8.3.0",
+    "react-dom": "~18.2.0",
     "rollup": "~3.12.1",
-    "typescript": "~4.9.5",
-    "react": "~18.2.0"
+    "typescript": "~4.9.5"
   },
   "allowedAlternativeVersions": {},
   "workspaceVersions": {
-    "@annatarhe/blurhash-react": "0.0.1",
-    "@annatarhe/blurhash-react-native": "0.0.1"
+    "@annatarhe/blurhash-react-native": "0.0.1",
+    "@annatarhe/blurhash-react": "0.0.1"
   },
   "semverPath": "/Users/bytedance/Library/pnpm/global/5/.pnpm/semver@7.3.8/node_modules/semver/index.js",
   "userPnpmfilePath": "/Users/bytedance/code/clippingkk/blurhash-view/common/config/rush/.pnpmfile.cjs"
