@@ -1,10 +1,10 @@
 {
   "name": "@annatarhe/blurhash-react",
   "version": "0.0.1",
-  "description": "",
+  "description": "a progressive blurhash react component",
   "type": "module",
   "types": "dist/type.d.ts",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "",
+  "author": "AnnatarHe<annatar.he@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "blurhash": "~2.0.4"
