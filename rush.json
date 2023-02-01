@@ -334,7 +334,8 @@
   "projects": [
     {
       "packageName": "@annatarhe/blurhash-react",
-      "projectFolder": "./blurhash-react"
+      "projectFolder": "./blurhash-react",
+      "shouldPublish": true
     },
     {
       "packageName": "@annatarhe/blurhash-react-native",
