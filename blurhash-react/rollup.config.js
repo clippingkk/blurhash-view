@@ -1,14 +1,14 @@
 import esbuild from 'rollup-plugin-esbuild'
+import dts from 'rollup-plugin-dts'
 
-export default {
+export default [{
   input: 'src/index.ts',
   output: {
-		file: 'dist/index.js',
-		format: 'es'
-	},
+    file: 'dist/index.js',
+    format: 'es'
+  },
   plugins: [
     esbuild({
-      // All options are optional
       include: /\.[jt]sx?$/, // default, inferred from `loaders` option
       exclude: /node_modules/, // default
       sourceMap: true, // default
@@ -19,17 +19,13 @@ export default {
       jsxFragment: 'React.Fragment',
       // Like @rollup/plugin-replace
       define: {
-        __VERSION__: '"x.y.z"',
+        // __VERSION__: '"x.y.z"',
       },
       tsconfig: 'tsconfig.json', // default
-      // Add extra loaders
-      loaders: {
-        // Add .json files support
-        // require @rollup/plugin-commonjs
-        '.json': 'json',
-        // Enable JSX in .js files too
-        '.js': 'jsx',
-      },
     }),
   ],
-}
+}, {
+  input: "src/index.ts",
+  output: [{ file: "dist/type.d.ts", format: "es" }],
+  plugins: [dts()],
+}]

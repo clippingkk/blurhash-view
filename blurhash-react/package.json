@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "type": "module",
+  "types": "dist/type.d.ts",
   "main": "index.js",
   "scripts": {
     "build": "rollup --config",
@@ -17,7 +18,7 @@
     "blurhash": "~2.0.4"
   },
   "peerDependencies": {
-    "react": "~18.0.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@types/react": "~18.0.27",
@@ -37,6 +38,7 @@
     "@storybook/builder-webpack5": "~6.5.16",
     "@storybook/manager-webpack5": "~6.5.16",
     "esbuild": "~0.17.5",
-    "rollup-plugin-esbuild": "~5.0.0"
+    "rollup-plugin-esbuild": "~5.0.0",
+    "rollup-plugin-dts": "~5.1.1"
   }
 }
