@@ -1,0 +1,9 @@
+{
+  "node": "19.1.0",
+  "packageManager": "pnpm",
+  "packageManagerVersion": "7.25.1",
+  "rushJsonFolder": "/Users/bytedance/code/clippingkk/blurhash-view",
+  "npmrcHash": "ee68e6b827bdf7ec9525260572c6fe6f94909053",
+  "storePath": "/Users/bytedance/code/clippingkk/blurhash-view/common/temp/pnpm-store",
+  "workspaces": true
+}
