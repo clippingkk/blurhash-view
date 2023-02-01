@@ -1,7 +1,16 @@
 {
-  "allPreferredVersions": {},
+  "allPreferredVersions": {
+    "blurhash": "~2.0.4",
+    "@types/react": "~18.0.27",
+    "rollup": "~3.12.1",
+    "typescript": "~4.9.5",
+    "react": "~18.2.0"
+  },
   "allowedAlternativeVersions": {},
-  "workspaceVersions": {},
+  "workspaceVersions": {
+    "@annatarhe/blurhash-react": "0.0.1",
+    "@annatarhe/blurhash-react-native": "0.0.1"
+  },
   "semverPath": "/Users/bytedance/Library/pnpm/global/5/.pnpm/semver@7.3.8/node_modules/semver/index.js",
   "userPnpmfilePath": "/Users/bytedance/code/clippingkk/blurhash-view/common/config/rush/.pnpmfile.cjs"
 }

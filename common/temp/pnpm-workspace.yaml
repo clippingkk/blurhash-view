@@ -1,1 +1,3 @@
-packages: []
+packages:
+  - ../../blurhash-react
+  - ../../blurhash-react-native

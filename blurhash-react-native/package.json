@@ -1,0 +1,17 @@
+{
+  "name": "@annatarhe/blurhash-react-native",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 2",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blurhash": "~2.0.4",
+    "react": "~18.2.0"
+  }
+}
