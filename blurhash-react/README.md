@@ -1,8 +1,4 @@
-# blurhash-view
-
-blurhash-view for react and react native
-
-## react
+## @annatarhe/blurhash-react
 
 use [BlurHash](https://blurha.sh/) to render placeholder of image
 
