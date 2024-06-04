@@ -1,14 +1,14 @@
 name: CI
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
       - name: Git config user
@@ -16,12 +16,11 @@ jobs:
         with:
           name: # Service Account's Name
           email: # Service Account's Email Address
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 19
-      - name: Verify Change Logs
-        run: node common/scripts/install-run-rush.js change --verify
+          node-version: 22
+      - uses: pnpm/action-setup@v4
       - name: Rush Install
-        run: node common/scripts/install-run-rush.js install
+        run: pnpm i
       - name: Rush rebuild
-        run: node common/scripts/install-run-rush.js rebuild --verbose --production
+        run: cd blurhash-react && pnpm run build
