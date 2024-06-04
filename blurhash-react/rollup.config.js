@@ -1,10 +1,14 @@
 import esbuild from 'rollup-plugin-esbuild'
 import dts from 'rollup-plugin-dts'
+import preserveDirectives from 'rollup-plugin-preserve-directives'
+import pkg from './package.json' with { type: "json" }
 
 export default [{
   input: 'src/index.ts',
   output: {
-    file: 'dist/index.js',
+    // file: 'dist/index.js',
+    dir: './dist',
+    preserveModules: true,
     format: 'es'
   },
   plugins: [
@@ -19,10 +23,11 @@ export default [{
       jsxFragment: 'React.Fragment',
       // Like @rollup/plugin-replace
       define: {
-        // __VERSION__: '"x.y.z"',
+        __VERSION__: `'"${pkg.version}"'`,
       },
       tsconfig: 'tsconfig.json', // default
     }),
+    preserveDirectives(),
   ],
 }, {
   input: "src/index.ts",
